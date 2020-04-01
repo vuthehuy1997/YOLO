@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Detect Object Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  img {
+    width: 100%;
+    padding-bottom: 4em;
+    position: center;
+  }
+  .list-group{
+    max-height: 900px;
+    margin-bottom: 10px;
+    overflow:scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  </style>
+</head>
+<body>
+
+<div class="text-center" style="margin-bottom:0">
+  <div class="row justify-content-md-center">
+    <div class="col-md-auto">
+      <img src="/static/yolo.png" alt="yolo">
+    </div>
+  </div>
+  
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/detect">Detect Image</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="/detectflower">Detect Flower Image</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="/info">Information</a>
+      </li> 
+    </ul>
+  </div>  
+</nav>
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Object can be detected</h2>
+      <ul class="list-group">
+        
+        <li class="list-group-item">person</li>
+        <li class="list-group-item">bicycle</li>
+        <li class="list-group-item">car</li>
+        <li class="list-group-item">motorbike</li>
+        <li class="list-group-item">aeroplane</li>
+        <li class="list-group-item">bus</li>
+        <li class="list-group-item">train</li>
+        <li class="list-group-item">truck</li>
+        <li class="list-group-item">boat</li>
+        <li class="list-group-item">traffic</li>
+        <li class="list-group-item">light</li>
+        <li class="list-group-item">fire</li>
+        <li class="list-group-item">hydrant</li>
+        <li class="list-group-item">stop</li>
+        <li class="list-group-item">sign</li>
+        <li class="list-group-item">parking</li>
+        <li class="list-group-item">meter</li>
+        <li class="list-group-item">bench</li>
+        <li class="list-group-item">bird</li>
+        <li class="list-group-item">cat</li>
+        <li class="list-group-item">dog</li>
+        <li class="list-group-item">horse</li>
+        <li class="list-group-item">sheep</li>
+        <li class="list-group-item">cow</li>
+        <li class="list-group-item">elephant</li>
+        <li class="list-group-item">bear</li>
+        <li class="list-group-item">zebra</li>
+        <li class="list-group-item">giraffe</li>
+        <li class="list-group-item">backpack</li>
+        <li class="list-group-item">umbrella</li>
+        <li class="list-group-item">handbag</li>
+        <li class="list-group-item">tie</li>
+        <li class="list-group-item">suitcase</li>
+        <li class="list-group-item">frisbee</li>
+        <li class="list-group-item">skis</li>
+        <li class="list-group-item">snowboard</li>
+        <li class="list-group-item">sports</li>
+        <li class="list-group-item">ball</li>
+        <li class="list-group-item">kite</li>
+        <li class="list-group-item">baseball</li>
+        <li class="list-group-item">bat</li>
+        <li class="list-group-item">baseball</li>
+        <li class="list-group-item">glove</li>
+        <li class="list-group-item">skateboard</li>
+        <li class="list-group-item">surfboard</li>
+        <li class="list-group-item">tennis</li>
+        <li class="list-group-item">racket</li>
+        <li class="list-group-item">bottle</li>
+        <li class="list-group-item">wine</li>
+        <li class="list-group-item">glass</li>
+        <li class="list-group-item">cup</li>
+        <li class="list-group-item">fork</li>
+        <li class="list-group-item">knife</li>
+        <li class="list-group-item">spoon</li>
+        <li class="list-group-item">bowl</li>
+        <li class="list-group-item">banana</li>
+        <li class="list-group-item">apple</li>
+        <li class="list-group-item">sandwich</li>
+        <li class="list-group-item">orange</li>
+        <li class="list-group-item">broccoli</li>
+        <li class="list-group-item">carrot</li>
+        <li class="list-group-item">hot</li>
+        <li class="list-group-item">dog</li>
+        <li class="list-group-item">pizza</li>
+        <li class="list-group-item">donut</li>
+        <li class="list-group-item">cake</li>
+        <li class="list-group-item">chair</li>
+        <li class="list-group-item">sofa</li>
+        <li class="list-group-item">pottedplant</li>
+        <li class="list-group-item">bed</li>
+        <li class="list-group-item">diningtable</li>
+        <li class="list-group-item">toilet</li>
+        <li class="list-group-item">tvmonitor</li>
+        <li class="list-group-item">laptop</li>
+        <li class="list-group-item">mouse</li>
+        <li class="list-group-item">remote</li>
+        <li class="list-group-item">keyboard</li>
+        <li class="list-group-item">cell</li>
+        <li class="list-group-item">phone</li>
+        <li class="list-group-item">microwave</li>
+        <li class="list-group-item">oven</li>
+        <li class="list-group-item">toaster</li>
+        <li class="list-group-item">sink</li>
+        <li class="list-group-item">refrigerator</li>
+        <li class="list-group-item">book</li>
+        <li class="list-group-item">clock</li>
+        <li class="list-group-item">vase</li>
+        <li class="list-group-item">scissors</li>
+        <li class="list-group-item">teddy</li>
+        <li class="list-group-item">bear</li>
+        <li class="list-group-item">hair</li>
+        <li class="list-group-item">drier</li>
+        <li class="list-group-item">toothbrush</li>
+
+      </ul> 
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      <h2>How to use</h2>
+      <h5>Step 1: choose the picture that want to detect</h5>
+      <img src="/static/choose_picture.png" alt="choose_picture">
+      
+      <h5>Step 2: Press Submit button to starting detect</h5>
+      <img src="/static/submit.png" alt="submit">
+
+      <h5>Step 3: Wait for result</h5>
+      <img src="/static/result.png" alt="result">
+      <br>
+      
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <p>Vu The Huy</p>
+</div>
+
+</body>
+</html>
